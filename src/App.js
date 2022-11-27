@@ -1,22 +1,15 @@
 
 import "./App.css";
-import Button from 'react-bootstrap/Button';
-import { FaBan } from "react-icons/fa";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
-// import bakeryData from "./assets/bakery-data.json";
 import BakeryItem from "./components/BakeryItem.js";
 
 function App() {
-  // TODO: use useState to create a state variable to hold the state of the cart
-  /* add your cart state code here */
 
   let [cartTotal, setCount] = useState(0); // setcount is the updating function
   let [cartTotalItems, setCountItems] = useState(0); // setcount is the updating function
   let [nameCartItems, addItemName] = useState([]);
-  // let [removedItems, removeItemFunc] = useState([]);
   let [bakeryData, updateAllItems] = useState([
     {
       "name": "Chocolate Chip Cookies",
@@ -130,7 +123,7 @@ function App() {
   let [radioNum, changeRadio] = useState(0);
   let [typeStr, changeTypeFun] = useState("all");
   let [sugarStr, changeSugarFun] = useState("all");
-   // let mainBakery = [...bakeryData]; // HOW to make deep copy
+   // let mainBakery = [...bakeryData]; // Question: How to make deep copy
    let mainBakery = [
     {
       "name": "Chocolate Chip Cookies",
@@ -240,7 +233,8 @@ function App() {
       "type": "pastry"
     }
   ]
-  
+  let newNameCart = [];
+
   function sortAscending() { //sorts bakeryItems in ascending order
     const strAscending = [...bakeryData].sort((a, b) =>
     a.name > b.name ? 1 : -1,
@@ -249,7 +243,7 @@ function App() {
   }
 
 
-  function sort() {
+  function sort() { // depending on which button is seletced, sorting happens
     if (radioNum == 0) { 
       sortAscending();
      }
@@ -269,10 +263,7 @@ function App() {
   }
 
   function update() { // this function updates bakery data according to new filters
-    console.log("inside update");
-    let newArray = [];
-    console.log("sugar str:" + sugarStr); // this is empty
-    console.log("typeStr -" + typeStr); // this returns allbread
+    let newArray = []; // temp array
     if (sugarStr == "all" && typeStr =="all") {
       console.log("inside first if - all");
       newArray = [...mainBakery];
@@ -294,7 +285,6 @@ function App() {
           newArray = [...newArray, item];
         }
       });
-      
     }
     else { // 2 filters
       console.log("inside else - 2 filters");
@@ -310,13 +300,13 @@ function App() {
     sort(); // see if this goes before or after
   }
 
-  function changeType(strType) {
+  function changeType(strType) { // for type filter
     changeTypeFun(typeStr = strType); // when the radio button is selected, the str is changed
     console.log("changed type is" + typeStr); // gets printed
     update();
   }
 
-  function changeSugar(strSugar) {
+  function changeSugar(strSugar) { // for sugar filter
      // when the radio button is selected, the str is changed
     changeSugarFun(sugarStr = strSugar);
     console.log("changed sugar is" + strSugar);
@@ -367,17 +357,17 @@ function App() {
         
         <p>No. of items in the cart:  <b>{cartTotalItems}</b></p>
        
-        <p> <b>Items in Cart:</b></p>
-        {nameCartItems.map((item) => (
+              <p> <b>Items in Cart:</b></p>
+              
+              {
+       
+       nameCartItems.map((item) => (
+          
           <div className="itemButton">
             {item.name}
-            <Button id="removeButton" onClick={handleRemove("hello")}><FaBan /> </Button>
-          </div>
-          // <Button className="itemButton">
-          //   {item.name}
-          //   <div id="removeButton" onClick={handleRemove("hello")}><FaBan /> </div>
-          // </Button>
-          ))}
+           
+         </div>
+          ))} 
         
       </div>
         </div>
@@ -385,9 +375,10 @@ function App() {
         <div className="bakeryCards">
           {
             bakeryData.map((item, index) => ( 
-        <BakeryItem name={item.name} description={item.description} price={item.price} image={item.image} sugar={item.sugar} type={item.type}
+              <BakeryItem key = {item.name}
+                name={item.name} description={item.description} price={item.price} image={item.image} sugar={item.sugar} type={item.type}
           cartTotal={cartTotal} cartTotalItems={cartTotalItems} nameCartItems={nameCartItems}
-          setCount={setCount} setCountItems={setCountItems} addItemName={addItemName} />
+          setCount={setCount} setCountItems={setCountItems} addItemName={addItemName} newNameCart ={newNameCart} />
         
       ))}
           </div>

@@ -95,7 +95,8 @@
 
 .itemName{
   font-weight: 400;
-  
+  font-size: large;
+  text-decoration-line: underline;  
 }
 
 .bakeryCards{
@@ -110,7 +111,7 @@
   border-style: dashed;
   margin: 1rem;
   padding: 1rem;
-  width: fit-content;
+  width: 20rem;
   flex-wrap: wrap;
 }
 
