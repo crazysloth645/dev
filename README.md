@@ -21,6 +21,7 @@ This is an application very similar to the sample one given to us. It is a websi
 ### How Data is Passed Down Through Components
 - User interfacts with each BakeryItem's favorite button. When the button is clicked, a method is called to update the arrays and variables which in turn updates what is displayed in the cart. Each favorited item appears in the cart when its favorite button is clicked, and removed from the cart when the favorite button is unclicked.
 - When the user interacts with the right panel, each radio button calls a method with a particular prop, filtering between the bakeryItems and changing the display accordingly. 
+- Data between App and BakeryItem is passed through props. 
 
 ### How the User Triggers State Changes
 - User triggers changes by interacting with the radio buttons and the "Favorite button" (which can be toggled). Clicking on the "All" filters basically resets all the filters. 
