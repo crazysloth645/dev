@@ -3,7 +3,8 @@ import "./App.css";
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
-import BakeryItem from "./components/BakeryItem.js";
+// import BakeryItem from "./components/BakeryItem.js";
+import BakeryItem from "./BakeryItem.js";
 
 function App() {
 
