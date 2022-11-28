@@ -1,14 +1,28 @@
 {
   "files": {
-    "main.css": "/dev/static/css/main.073c9b0a.css",
-    "main.js": "/dev/static/js/main.f76beaa8.js",
-    "static/media/logo.svg": "/dev/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/dev/static/css/main.74904bdf.css",
+    "main.js": "/dev/static/js/main.d606de30.js",
+    "static/media/lato-v23-latin-italic.svg": "/dev/static/media/lato-v23-latin-italic.e1273b772943b381630b.svg",
+    "static/media/lato-v23-latin-700.svg": "/dev/static/media/lato-v23-latin-700.414efa6d77701ff12fc5.svg",
+    "static/media/lato-v23-latin-regular.svg": "/dev/static/media/lato-v23-latin-regular.ec5307044f561bd0e346.svg",
+    "static/media/lato-v23-latin-italic.ttf": "/dev/static/media/lato-v23-latin-italic.f8f72b63d20ee6d95bf1.ttf",
+    "static/media/lato-v23-latin-regular.ttf": "/dev/static/media/lato-v23-latin-regular.cf2315b218ab9f01217d.ttf",
+    "static/media/lato-v23-latin-700.ttf": "/dev/static/media/lato-v23-latin-700.c94e49f689e148931a36.ttf",
+    "static/media/lato-v23-latin-italic.woff": "/dev/static/media/lato-v23-latin-italic.51e6797228a4eea81ade.woff",
+    "static/media/lato-v23-latin-regular.woff": "/dev/static/media/lato-v23-latin-regular.292725486219768e6225.woff",
+    "static/media/lato-v23-latin-700.woff": "/dev/static/media/lato-v23-latin-700.5cd24624b77e9c2f6555.woff",
+    "static/media/lato-v23-latin-italic.eot": "/dev/static/media/lato-v23-latin-italic.51179236b63dc87c67fe.eot",
+    "static/media/lato-v23-latin-regular.eot": "/dev/static/media/lato-v23-latin-regular.280b6b4991a4c5157d14.eot",
+    "static/media/lato-v23-latin-700.eot": "/dev/static/media/lato-v23-latin-700.0e39f8fd1733e81ab05d.eot",
+    "static/media/lato-v23-latin-italic.woff2": "/dev/static/media/lato-v23-latin-italic.516d382b3da7e145024b.woff2",
+    "static/media/lato-v23-latin-regular.woff2": "/dev/static/media/lato-v23-latin-regular.be36596da218e1eec01c.woff2",
+    "static/media/lato-v23-latin-700.woff2": "/dev/static/media/lato-v23-latin-700.8f28e0e1fdb195149f1c.woff2",
     "index.html": "/dev/index.html",
-    "main.073c9b0a.css.map": "/dev/static/css/main.073c9b0a.css.map",
-    "main.f76beaa8.js.map": "/dev/static/js/main.f76beaa8.js.map"
+    "main.74904bdf.css.map": "/dev/static/css/main.74904bdf.css.map",
+    "main.d606de30.js.map": "/dev/static/js/main.d606de30.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f76beaa8.js"
+    "static/css/main.74904bdf.css",
+    "static/js/main.d606de30.js"
   ]
 }
