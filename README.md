@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
+If you used the stencil code, this is `https://crazysloth645.github.io/dev/`
 
 ### Goal and Value of the Application
 This is an application very similar to the sample one given to us. It is a website for a bakery that lets customers look at the items offered online. Users can sort either alphabetically or by price (least to most) and can filter by the different types (bread, pastry or dessert) and the different sugar levels (low, medium or high) because sugar is a concern for a lot of Americans in terms of their diet preferences. The user can also favorite a particular item to see how the cart will be affected by totalling their favorites. 
