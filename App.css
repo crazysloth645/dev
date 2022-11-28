@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  /* src:url('lato-v23-latin-700.eot'); */
+  src: url('lato-v23-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('lato-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-italic - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('lato-v23-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('lato-v23-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('lato-v23-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('lato-v23-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('lato-v23-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('lato-v23-latin-italic.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('lato-v23-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('lato-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('lato-v23-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('lato-v23-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('lato-v23-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('lato-v23-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+
+.App {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato';
+  margin: 2rem;
+  /* align-content: center;
+  justify-content: center ; */
+}
+
+
+.logoBakery{
+  height: 10rem;
+  width: 11rem;
+  align-self: center;
+}
+
+.leftPanel{
+  display: flex;
+  flex-direction: column;
+   /* justify-content: space-around;  */
+  align-items: left;
+  background-color: #cdb4db;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: fit-content;
+
+}
+
+.sortingPanel{
+  padding-bottom: 1rem;
+  
+}
+.sortingPanel h4{
+ font-size: large;
+ text-decoration: underline;
+  
+}
+
+.mainPage{
+  display: flex;
+  flex-direction: row; 
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+.rowWrapper{
+  display: flex;
+  /* justify-content: center; */
+}
+
+
+.itemName{
+  font-weight: 400;
+  font-size: large;
+  text-decoration-line: underline;  
+}
+
+.inlineDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+.itemText{
+  margin-left: 0.5rem;
+}
+
+.bakeryCards{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+
+.itemBakery{
+  border-color: pink;
+  border-width: 3px;
+  border-style: dashed;
+  margin: 1rem;
+  padding: 1rem;
+  width: 20rem;
+  flex-wrap: wrap;
+}
+
+.images{
+  width: 90px;
+  height: 90px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.itemButton{
+  /* background-color: white; */
+  border: white;
+  border-style: solid;
+  border-width: 2px;
+  /* border-radius: 7%; */
+  margin: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: fit-content;
+  justify-content: space-around;
+  /* display: inline; */
+}
+
+#removeButton{
+  background-color: #cdb4db;
+  border-color: #cdb4db;
+}
+
+      
+
+    .unfav{ 
+      /* when its not favourited */
+      background-color: #cdb4db;
+      color: purple;
+      display: inline;
+      padding: 0.5rem;
+      align-items: center;
+      border-radius: 25%;
+      border-color: purple;
+      border-style: groove;
+
+    }
+
+    .fav{
+      background-color: red;
+      color: white;
+      display: inline;
+      padding: 0.5rem;
+      align-items: center;
+      border-radius: 25%;
+      border-color: purple;
+      border-style: groove;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      }
+    
+    * {
+      margin: 0;
+      } 
+    
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+      }
+    
+    table {
+         border-collapse: collapse;
+         border-spacing: 0;
+        }
+    
